@@ -1,0 +1,69 @@
+/* Height for devices larger than 576px */
+/*@media (min-width: 992px) {*/
+/*	#intro {*/
+/*		margin-top: -58.59px;*/
+/*		height: 50vh !important;*/
+/*	}*/
+/*}*/
+
+@media(max-width: 991px){
+	.btn-success.mob.top{
+		display: block;
+	}
+	.btn-success.mob.bottom{
+		display: none;
+	}
+	.card_img{
+		height: auto;
+		object-fit: inherit;
+	}
+}
+@media(max-width: 768px){
+	#intro {
+		/*margin-top: 177px;*/
+	}
+	.fixed_my{
+		position: fixed;
+		top: 12%;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background: #fff;
+		padding-top: 15px;
+	}
+	.adaptive_replace_js{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.adaptive_replace_js .price_kg{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.adaptive_replace_js .price{
+		font-size: 32px;
+		font-weight: bold;
+		margin-right: 20px;
+	}
+
+	.hint {
+		bottom: -62px;
+		top: initial;
+		z-index: 10;
+	}
+	.hint:before {
+		top: -15px;
+		bottom: initial;
+		transform: rotate(180deg);
+	}
+	.hint.shipping {
+		top: initial;
+		bottom: -98px;
+	}
+}
+@media(max-width: 480px){
+	.nav_bar_menu_bottom_fixed{
+		display: block;
+	}
+}
